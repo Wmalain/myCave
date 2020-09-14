@@ -1,0 +1,73 @@
+header{
+
+    background-color: #88002D;
+}
+
+.divhead{
+    height: 140px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formcon{
+    text-align : right;
+}
+
+// SECTION CONNEXION
+.formheadconnect{
+
+    border: 2px solid #3E0018;
+    padding: 15px;
+    border-radius: 10px;
+    color: #3E0018;
+    text-align: center;
+}
+
+.formheadconnect2{
+
+    border: 2px solid #3E0018;
+    padding: 15px;
+    border-radius: 10px;
+    color: #3E0018;
+    text-align: center;
+    margin: 0px 25px 0px 25px;
+}
+
+.btnconnecthead{
+    border: 1px solid #3E0018;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #3E0018;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.logohead{
+    margin-left: 50px;
+}
+
+::placeholder{
+    color: #3E0018;
+}
+
+//SECTION ADMIN
+
+.listadminhead{
+    display:flex;
+    list-style-type: none;
+    color: inherit;
+}
+
+.linkadmin{
+    text-decoration: none;
+    color: #3E0018;
+    background-color: white;
+    border: 2px solid #3E0018;
+    padding: 15px;
+    border-radius: 10px;
+    color: #3E0018;
+    text-align: center;
+    margin: 0px 25px 0px 25px;
+}
+

@@ -1,0 +1,30 @@
+footer{
+    background-color: #88002D;
+    height: 130px;
+}
+
+.divfoot{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.imgfoot{
+    margin-top:5px;
+}
+.footlist{
+    margin-left: 150px;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+}
+.lifoot{
+    font-size: 2em;
+    margin:15px;
+    color: white;
+}
+
+.footp{
+    color:white;
+    text-align:center;
+    font-size: 0.8em;
+}
