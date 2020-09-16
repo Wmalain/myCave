@@ -8,7 +8,6 @@
     
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <link href="assets/js/carousel.js" type="text/css" rel="stylesheet">
     <title>Mycave - Alain Wehbe</title>
 </head>
 

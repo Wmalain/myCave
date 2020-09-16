@@ -10,12 +10,14 @@ require('asset/header.php');
 
 
 <div class="carousel">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+<?php
+vinafficheall();
+?>
   </div>
 
-  
+ 
+
+
 <?php 
     require('asset/footer.php');
 ?>

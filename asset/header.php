@@ -1,5 +1,5 @@
 <?php 
-require('asset/inc/function.php');
+// require('asset/inc/function.php');
 if(isset($_POST['submit-login'])){
     $user_email = htmlspecialchars($_POST['user_email']);
     $user_pass = htmlspecialchars($_POST['user_password']);
@@ -35,7 +35,7 @@ if(isset($_POST['submit-login'])){
         if (isset($_SESSION['email']) && $_SESSION['role'] == "2"){
         ?>
         <ul class="listadminhead">
-        <li class="listadminhead1"><a href="#" class="linkadmin">Gérer Produit</a></li>
+        <li class="listadminhead1"><a href="liste_article.php" class="linkadmin">Gérer Produit</a></li>
             <?php
                 if (isset($_SESSION['email'])){
             ?>
@@ -43,6 +43,7 @@ if(isset($_POST['submit-login'])){
             </ul>
             <?php
         }
+
             ?>
         <?php
         // SECTION ADMIN
@@ -56,7 +57,8 @@ if(isset($_POST['submit-login'])){
             ?>
                 <li><a href="?logout" class="linkadmin">Se déconnecter</a></li>
                 </ul>
-            <?php } ?>
+            <?php } 
+            ?>
         <?php    
         }else{
         ?>

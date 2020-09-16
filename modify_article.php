@@ -27,7 +27,7 @@ require('asset/header.php');
     <div class="form-group">
         <input type="file" name="modifyimg" id="modifyimg" accept=".png,.jpeg,.jpg,.gif">
     </div>
-    <button type="submit" name="submit-signup" class="btnmodify">modifier</button>
+    <button type="submit" name="btnmodify" class="btnmodify">modifier</button>
     <button type="submit" name="retour" class="btnretour3">Retour</button>
     <div class="imggrapes1"><img src="asset/img/grapes1.jpg" alt=""></div>
 
