@@ -28,7 +28,7 @@ if(isset($_POST['submit-login'])){
     
     <div class="divhead">
         <!-- LOGO -->
-        <img class="logohead" src="asset/img/logo1.png" alt="logo">
+        <a href="index.php"><img class="logohead" src="asset/img/logo1.png" alt="logo"></a>
 
     <!-- SECTION MODO -->
      <?php
@@ -50,8 +50,8 @@ if(isset($_POST['submit-login'])){
         }elseif (isset($_SESSION['email']) && $_SESSION['role'] == "1"){
         ?>
         <ul class="listadminhead">
-            <li class="listadminhead1"><a href="#" class="linkadmin">Gérer utilisateur</a></li>
-            <li class="listadminhead1"><a href="#" class="linkadmin">Gérer Produit</a></li>
+            <li class="listadminhead1"><a href="liste_user.php" class="linkadmin">Gérer utilisateur</a></li>
+            <li class="listadminhead1"><a href="liste_article.php" class="linkadmin">Gérer Produit</a></li>
             <?php 
                 if (isset($_SESSION['email'])){
             ?>

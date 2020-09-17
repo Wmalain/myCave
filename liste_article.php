@@ -6,10 +6,13 @@ require('asset/header.php');
 ?>
 
 <h1 class="titrelistearticle">Liste des articles</h1>
-<a class="alistearticle" href=""><i class="fas fa-wine-bottle ajoutproduit"></a></i>
+<a class="alistearticle" href="ajout_article.php"><i class="fas fa-wine-bottle ajoutproduit"></a></i>
 
+<?php
 
+tabvin();
 
+?>
 
   
 <?php 
