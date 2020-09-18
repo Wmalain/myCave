@@ -117,22 +117,5 @@ function suprArticle(){
     $sth->bindValue(':descriptionid',$iddescription,PDO::PARAM_INT);
     $sth->bindValue(':idsid',$id,PDO::PARAM_INT);
     $sth->execute();
-
-    $req = $sth->execute();
-
-    if($req){
-        echo "Votre bouteille à bien été supprimé";
-    }else{
-        echo "Un probleme est survenue";
-    }
-
 }
-
-
-
-
-
-
 ?>
-<!-- 
-&  $row['description_id'] &  $row['local_id']  -->

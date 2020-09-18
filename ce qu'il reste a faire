@@ -1,8 +1,10 @@
 
 BACK
+1*) Faire la liste user --> (OK)
 1) modifier les produits ()
 2) ajout d'user -->(OK)
-3) modifier les user ()
+3) modifier les user --> ( OK)
+3*) supprimer les users
 4) retravailler les condition pour rajouter des if else (
     1) les fonctions
     2) ajout article
@@ -13,6 +15,8 @@ BACK
 )
 5) un message d'acceuil qui cite le nom de l'utilisateur ()
 6) faire le trie dans les fonctions, la plus part devrais etre directement sur les pages plutot qu'en fonction.
+
+!!! COMMENTER MOTHER FUCKER
 
 
 

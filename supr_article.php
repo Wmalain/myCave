@@ -3,6 +3,7 @@ require('asset/inc/connect.php');
 require('asset/inc/function.php');
 
 suprArticle();
-header("Location:article.php");
+
+header("Location:liste_article.php");
 
 ?>
