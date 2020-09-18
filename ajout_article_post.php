@@ -1,72 +1,30 @@
-<?php 
+<?php
 require('asset/inc/connect.php');
-require('asset/inc/function.php');
+$sth1 = $db->query("SELECT id FROM local ORDER BY id DESC LIMIT 0,1");
+$sth1->setFetchMode(PDO::FETCH_ASSOC);
 
-// if(!empty($_SESSION['id'])){
-//     header ("Location:index.php?action=dc");
-// }
+$sth2 = $db->query("SELECT id FROM description ORDER BY id DESC LIMIT 0,1");
+$sth2->setFetchMode(PDO::FETCH_ASSOC);
 
-    if(isset($_POST['submit-signup'])){
-        
-        $nom = htmlspecialchars ($_POST['nom']);
-        $cepage = htmlspecialchars ($_POST['cepage']);
-        $annees = htmlspecialchars ($_POST['annees']);
-        $photo= $_FILES['photo'];
-        $pays = htmlspecialchars ($_POST['pays']);
-        $region = htmlspecialchars ($_POST['region']);
-        $user_id = htmlspecialchars ($_SESSION['id']);
-        $description = htmlspecialchars ($_POST['description']);
-      
-      
+$sth3 = $db->query("SELECT id FROM produit ORDER BY id DESC LIMIT 0,1");
+$sth3->setFetchMode(PDO::FETCH_ASSOC);
+$t = $sth3->fetch();
+$t2 = $sth2->fetch();
+$t3 = $sth1->fetch();
 
-        if($photo['size'] <= 1000000){
+    echo $t['id'];
 
-            $valid_ext = array('jpg','jpeg','gif','png');
-            $check_ext = strtolower(substr(strrchr($photo['name'], '.'),1));
-            
-            if(in_array($check_ext, $valid_ext)){
+$req = $db->prepare("INSERT INTO ids (`idproduit`, `iddescription`, `idlocal`) VALUES (:idproduit, :iddescription, :idlocal)");
+$req->bindValue(':idproduit', $t['id']);
+$req->bindValue(':iddescription', $t2['id']);
+$req->bindValue(':idlocal', $t3['id']);
+$req->execute();
 
-            $imgname = uniqid() . '_' . $photo['name'];
-            $upload_dir = "./asset/uploads/";
-            $upload_name = $upload_dir . $imgname;
-            $move_result = move_uploaded_file($photo['tmp_name'], $upload_name);
-
-        
-                if($move_result){
-                    $sth = $db->prepare("INSERT INTO produit(nom,cepage) VALUES (:nom,:cepage)
-                    ");
-                    $sth->bindValue(':nom',$nom);
-                    $sth->bindValue(':cepage',$cepage);
-                                       
-                    $sth->execute();
+header("Location:index.php");
 
 
-                    $sth = $db->prepare("INSERT INTO local(pays,region) VALUES (:pays,:region)
-                    ");
-                    $sth->bindValue(':pays',$pays);
-                    $sth->bindValue(':region',$region);
-                                       
-                    $sth->execute();
 
 
-                    $sth = $db->prepare("INSERT INTO description(annees,description,photo) VALUES (:annees,:description,:photo)
-                    ");
-                    $sth->bindValue(':annees',$annees);
-                    $sth->bindValue(':description',$description);
-                    $sth->bindValue(':photo',$imgname);
-                                        
-                    $sth->execute();
-                    
+// hydrateids($idproduit, $iddescription, $idlocal);
 
-                    header("Location:ajout_article_post_2.php");
-
-                }
-            }
-        }else{
-            echo "vérifier le format ou le poid de votre photo";
-
-        }
-    }
-     
-        ?>
-
+?>

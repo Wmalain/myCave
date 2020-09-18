@@ -1,0 +1,29 @@
+
+BACK
+1) modifier les produits ()
+2) ajout d'user -->(OK)
+3) modifier les user ()
+4) retravailler les condition pour rajouter des if else (
+    1) les fonctions
+    2) ajout article
+    3) ajout user
+    4) modifier articles (fonction non encore faite)
+    5) modifier user (fonction non encore faite)
+    6) salutation nom dans le header (fonction non encore faite)
+)
+5) un message d'acceuil qui cite le nom de l'utilisateur ()
+6) faire le trie dans les fonctions, la plus part devrais etre directement sur les pages plutot qu'en fonction.
+
+
+
+FRONT
+
+N'OUBLIE PAS DE LANCER TON SCSS GROS SAC! terminal/newterminal -> npm run sass
+
+1) mettre en page le site
+2) rajouter un favicon 
+3) ne pas oublier de prendre la bonne police et de faire des code couleurs scss
+
+AUTRES
+
+1) faire le slider
