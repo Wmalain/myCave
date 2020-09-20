@@ -3,6 +3,11 @@ require('asset/inc/connect.php');
 require('asset/inc/function.php');
 require('asset/head.php');
 require('asset/header.php');
+    $id = $_GET['id'];
+    $sql = $db->query("SELECT *, produit.id AS produit_id, description.id AS description_id, local.id AS local_id, ids.id AS ids_id FROM ids LEFT JOIN produit ON ids.idproduit = produit.id LEFT JOIN description ON ids.iddescription = description.id LEFT JOIN local ON ids.idlocal = local.id 
+    ");
+    $sql->setFetchMode(PDO::FETCH_ASSOC);
+
 
 ?>
 <h1 class="titremodifyarticle">Modifier un article</h1>
@@ -27,14 +32,16 @@ require('asset/header.php');
     <div class="form-group">
         <input type="file" name="modifyimg" id="modifyimg" accept=".png,.jpeg,.jpg,.gif">
     </div>
-    <button type="submit" name="btnmodify" class="btnmodify">modifier</button>
-    <button type="submit" name="retour" class="btnretour3">Retour</button>
+    <input type="hidden" name ="id" value="<?php echo $id;?> ">
+    <input type="submit" name="btnmodify" class="btnmodify" value="modifier">
+    
+    <input type="submit" name="retour" class="btnretour3" value="Retour">
+
     <div class="imggrapes1"><img src="asset/img/grapes1.jpg" alt=""></div>
 
 
 </form>
     
-
 
 <?php 
     require('asset/footer.php');

@@ -22,9 +22,7 @@ $row = $sql->fetch();
     </div>
     <input type="hidden" name ="id" value="<?php echo $id; ?> "/>
     <input type="submit" class="btnmodify" name ="submit-modify-user" value="Modifier l'utilisateur"/>
-
-    <!-- <button type="submit" name="submit-modify-user" class="btnmodify">modifier</button> -->
-    <!-- <button type="submit" name="retour" class="btnretour">Retour</button> -->
+    <input type="submit" name="retour" class="btnretour" value="Retour">
 
     <div class="imggrapes1"><img src="asset/img/grapes1.jpg" alt=""></div>
 </form>

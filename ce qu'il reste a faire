@@ -3,8 +3,8 @@ BACK
 1*) Faire la liste user --> (OK)
 1) modifier les produits ()
 2) ajout d'user -->(OK)
-3) modifier les user --> ( OK)
-3*) supprimer les users
+3) modifier les user --> (OK)
+3*) supprimer les users -->(OK)
 4) retravailler les condition pour rajouter des if else (
     1) les fonctions
     2) ajout article

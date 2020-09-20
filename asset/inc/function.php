@@ -91,7 +91,7 @@ function tabvin(){
                     <p>Nom du vin : <?php echo$row['nom'];?></p>
                     <p>année : <?php echo $row['annees'];?></p>
                     <p>pays : <?php echo $row['pays'];?></p>
-                   <a href=""> <i class="fab fa-accessible-icon"></i></a>
+                   <a href="modify_article.php?id=<?php echo $row['ids_id'] . "&produitid=" . $row['produit_id'] . "&descriptionid=" . $row['description_id'] . "&localid=" . $row['local_id'] ?>"> <i class="fab fa-accessible-icon"></i></a>
                    <a href="supr_article.php?id=<?php echo $row['ids_id'] . "&produitid=" . $row['produit_id'] . "&descriptionid=" . $row['description_id'] . "&localid=" . $row['local_id'] ?>"><i class="fab fa-acquisitions-incorporated"></i></a>
                 </div>
             </div>
