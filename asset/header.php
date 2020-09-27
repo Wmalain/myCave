@@ -25,7 +25,6 @@ if(isset($_POST['submit-login'])){
 
 ?>
 <header>
-    
     <div class="divhead">
         <!-- LOGO -->
         <a href="index.php"><img class="logohead" src="asset/img/logo1.png" alt="logo"></a>

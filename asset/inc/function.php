@@ -1,26 +1,4 @@
-<?php
-        //  function hydrateids($idproduit, $iddescription, $idlocal){
-        //      global $db;
-        //      $sth=$db->prepare("INSERT INTO ids (idproduit) VALUES (:idproduit)");
-    
 
-        //      $sth->bindValue(':idproduit',$idproduit);
-        //      $sth->execute();
-
-        //      $sth=$db->prepare("INSERT INTO ids (iddescription) VALUES (:iddescription)");
-    
-
-        //      $sth->bindValue(':iddescription',$iddescription);
-        //      $sth->execute();
-    
-        //      $sth=$db->prepare("INSERT INTO ids (idlocal) VALUES (:idlocal)");
-    
-
-        //      $sth->bindValue(':idlocal',$idlocal);
-        //      $sth->execute();
-    
-        //  }
-?>
 
 <?php
 function vinafficheall(){
@@ -91,8 +69,8 @@ function tabvin(){
                     <p>Nom du vin : <?php echo$row['nom'];?></p>
                     <p>année : <?php echo $row['annees'];?></p>
                     <p>pays : <?php echo $row['pays'];?></p>
-                   <a href="modify_article.php?id=<?php echo $row['ids_id'] . "&produitid=" . $row['produit_id'] . "&descriptionid=" . $row['description_id'] . "&localid=" . $row['local_id'] ?>"> <i class="fab fa-accessible-icon"></i></a>
-                   <a href="supr_article.php?id=<?php echo $row['ids_id'] . "&produitid=" . $row['produit_id'] . "&descriptionid=" . $row['description_id'] . "&localid=" . $row['local_id'] ?>"><i class="fab fa-acquisitions-incorporated"></i></a>
+                   <a href="modify_article.php?id=<?php echo $row['ids_id'] . "&produitid=" . $row['produit_id'] . "&descriptionid=" . $row['description_id'] . "&localid=" . $row['local_id'] ?>"><i class="fas fa-edit"></i></a>
+                   <a href="supr_article.php?id=<?php echo $row['ids_id'] . "&produitid=" . $row['produit_id'] . "&descriptionid=" . $row['description_id'] . "&localid=" . $row['local_id'] ?>"><i class="fas fa-trash-alt"></i></i></a>
                 </div>
             </div>
         <?php
@@ -119,3 +97,4 @@ function suprArticle(){
     $sth->execute();
 }
 ?>
+
