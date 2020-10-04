@@ -1,21 +1,22 @@
 footer{
     background-color: #88002D;
-    height: 130px;
+    height: 160px;
+    bottom:0;
+    width:100%;
+    margin-top:25px;
 }
 
 .divfoot{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
 }
-.imgfoot{
-    margin-top:5px;
-}
+
 .footlist{
-    margin-left: 150px;
-    align-items: center;
     display: flex;
+    justify-content:center;
     list-style-type: none;
+    padding:inherit;
 }
 .lifoot{
     font-size: 2em;

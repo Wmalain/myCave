@@ -1,5 +1,7 @@
 <?php
 require('asset/inc/connect.php');
+// pour compléter la table ids avec les id dans autres table
+
 $sth1 = $db->query("SELECT id FROM local ORDER BY id DESC LIMIT 0,1");
 $sth1->setFetchMode(PDO::FETCH_ASSOC);
 
@@ -12,7 +14,7 @@ $t = $sth3->fetch();
 $t2 = $sth2->fetch();
 $t3 = $sth1->fetch();
 
-    echo $t['id'];
+    // echo $t['id'];
 
 $req = $db->prepare("INSERT INTO ids (`idproduit`, `iddescription`, `idlocal`) VALUES (:idproduit, :iddescription, :idlocal)");
 $req->bindValue(':idproduit', $t['id']);

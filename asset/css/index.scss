@@ -1,3 +1,42 @@
+body{
+    font-family: "SourceSansPro-Regular", sans-serif;
+}
+// .slick-slider {
+//     position: relative;
+//     margin: 0 auto;
+//     display: block;
+//     box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     -webkit-touch-callout: none;
+//     -webkit-user-select: none;
+//     -khtml-user-select: none;
+//     -moz-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+//     -ms-touch-action: pan-y;
+//     touch-action: pan-y;
+//     -webkit-tap-highlight-color: transparent;
+// }
+// .slick-prev{
+//     width:50px;
+//     height:50px;
+//     position:absolute;
+//     left:0;
+//     top:50%;
+//     -ms-transform: translateY(-50%); /* IE 9 */
+//     -webkit-transform: translateY(-50%); /* Safari */
+//     transform: translateY(-50%);
+//     }
+//     .slick-next{
+//         width:50px;
+//         height:50px;
+//         position:absolute;
+//         right:0;
+//         top:50%;
+//         -ms-transform: translateY(-50%); /* IE 9 */
+//         -webkit-transform: translateY(-50%); /* Safari */
+//         transform: translateY(-50%);
+//         }
 .titreindex{
     text-align: center;
     color: #3E0018;
@@ -6,6 +45,9 @@
 .carousel{
     text-align: center;
     margin: 100px;
+}
+.vinafficheall{
+margin: 10px auto 10px auto;
 }
 
 .infocon{

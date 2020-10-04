@@ -1,7 +1,7 @@
 
 BACK
 1*) Faire la liste user --> (OK)
-1) modifier les produits ()
+1) modifier les produits (OK)
 2) ajout d'user -->(OK)
 3) modifier les user --> (OK)
 3*) supprimer les users -->(OK)
@@ -9,8 +9,6 @@ BACK
     1) les fonctions
     2) ajout article
     3) ajout user
-    4) modifier articles (fonction non encore faite)
-    5) modifier user (fonction non encore faite)
     6) salutation nom dans le header (fonction non encore faite)
 )
 5) un message d'acceuil qui cite le nom de l'utilisateur ()
@@ -27,7 +25,5 @@ N'OUBLIE PAS DE LANCER TON SCSS GROS SAC! terminal/newterminal -> npm run sass
 1) mettre en page le site
 2) rajouter un favicon 
 3) ne pas oublier de prendre la bonne police et de faire des code couleurs scss
-
-AUTRES
-
-1) faire le slider
+4) mettre en forme faire le slider
+5) le responsive de ces morts

@@ -1,0 +1,70 @@
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 725px) {
+//list
+.listdisplay{
+    display: none;
+}
+.imgvin{
+    width: 130px;
+    height: 150px;
+}
+.listuser{
+    flex-direction: column;	
+
+}
+.listusersel{
+    flex-direction: column;	
+    margin: inherit;
+
+}
+.listusera{
+    padding-bottom: 5px;
+}
+}
+
+@media (max-width: 880px) {
+   //header
+   .linkadmin{
+    margin: inherit;
+
+    }
+   .logohead{
+       margin: inherit;
+       margin-bottom:40px;
+       padding:inherit;
+   }
+   .divhead{
+    height: 50vh;
+    display:flex;
+    flex-direction: column;	
+    justify-content: center;
+    align-items: center;
+   }
+   .listadminhead{
+       display: flex;
+    flex-direction: column;	
+    justify-content: center;
+    align-items: center;
+    padding:inherit;
+    margin: inherit;
+
+
+}
+.listadminhead1{
+    margin-bottom:70px;
+}
+
+.formcon{
+    margin-bottom:20px;
+    display:flex;
+    flex-direction: column;	
+    justify-content: center;
+    align-items: center;
+
+}
+.btnconnecthead{
+    margin:inherit;
+    margin-top:20px;
+
+}
+}

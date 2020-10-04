@@ -7,8 +7,7 @@ require('asset/header.php');
 ?>
 
 
-
-<!-- fonction pour interdir l'accés au information au non connectés -->
+<div class="main">
 <?php
 
     if (isset($_GET['id']) && !empty($_GET['id'])){ 
@@ -16,12 +15,12 @@ require('asset/header.php');
             vinaffiche();
     }
     else{
-        header("Location:ajout_article_post_2.php");
+        header("Location:index.php");
     } 
 
         ?>
 
-
+</div>
 
 
 <?php 

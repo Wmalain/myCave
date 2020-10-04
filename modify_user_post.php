@@ -20,7 +20,7 @@ if(isset($_POST['submit-modify-user'])){
   
 
                 $sth->execute();
-                // header("Location:liste_user.php");
+                header("Location:liste_user.php");
         
 }else{
         echo "erreur";

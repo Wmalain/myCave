@@ -1,38 +1,53 @@
-// LISTE USER
-.titrelistearticle{
-    text-align: center;
-    color: #3E0018 ;
-}
-.ajoutproduit{
-    position: absolute;
-    top : 150px;
-    right : 200px;
-    font-size: 3em;
-}
-.alistearticle{
-    color: #3E0018;
-}
+// LISTE USER & LISTE PRODUIT
 
 
 
-
-
-
-
-
-
-// LISTE PRODUIT
-
-.titreajoutuser{
-    text-align: center;
-    color: #3E0018 ;
-}
 .ajoutuser{
-    position: absolute;
-    top : 150px;
-    right : 200px;
+    
     font-size: 3em;
 }
-.alisteuser{
-    color: #3E0018;
+
+.divlistus{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #3E0018 ;
+    
+}
+.divlistus2{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #3E0018 ;
+    margin-bottom: 60px;
+
+    
+}
+
+.listusersel{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid #3E0018;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+}
+
+.listusersel2{
+    text-align: center;
+    display:flex;
+}
+.listuserp{
+    margin-left: 10px;
+    font-size:1.2em;
+}
+
+.listusera{
+    color:#3E0018;
+    padding-left: 40px;
+    font-size: 2em;
+    margin-right: 20px;
 }

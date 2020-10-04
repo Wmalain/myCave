@@ -1,5 +1,7 @@
+<header>
 <?php 
-// require('asset/inc/function.php');
+
+// formulaire de connexion
 if(isset($_POST['submit-login'])){
     $user_email = htmlspecialchars($_POST['user_email']);
     $user_pass = htmlspecialchars($_POST['user_password']);
@@ -13,23 +15,26 @@ if(isset($_POST['submit-login'])){
             $_SESSION['id'] = $db_id;
             $_SESSION['email'] = $db_email;
             $_SESSION['role'] = $db_role;
-            $message = "<div > Vous êtes bien connectés </div>";
-            // header("Location:profile.php");
+
         }else{
-            $message = "<div> Mot de passe incorrect.</div>";
-        }
+            // si mdp inconnu
+            ?> 
+            <div> Mot de passe incorrect.</div>
+        <?php }
     }else{
-        $message = "<div> Identifiant inconnu.</div>";
+        // si mail inconnu
+        ?>
+        <div> Identifiant inconnu.</div>
+<?php
     }
 }
 
 ?>
-<header>
     <div class="divhead">
         <!-- LOGO -->
         <a href="index.php"><img class="logohead" src="asset/img/logo1.png" alt="logo"></a>
 
-    <!-- SECTION MODO -->
+    <!-- SECTION MODO autorisation limité -->
      <?php
         if (isset($_SESSION['email']) && $_SESSION['role'] == "2"){
         ?>
@@ -45,7 +50,7 @@ if(isset($_POST['submit-login'])){
 
             ?>
         <?php
-        // SECTION ADMIN
+        // SECTION ADMIN autorisation total
         }elseif (isset($_SESSION['email']) && $_SESSION['role'] == "1"){
         ?>
         <ul class="listadminhead">
@@ -61,7 +66,7 @@ if(isset($_POST['submit-login'])){
         <?php    
         }else{
         ?>
-        <!-- SECTION CONNEXION -->
+        <!-- Si non connecté alors formulaire de connexion disponible -->
     <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="formcon">
     
         <input class="formheadconnect" type="text" name="user_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre mail...">

@@ -47,7 +47,7 @@ if (isset($_POST['submit-signup'])){
 }
         ?>
 
-
+<div class="gen">
 
 <h1 class="titreajoutuser">Ajouter un Utilisateur</h1>
 
@@ -69,10 +69,9 @@ if (isset($_POST['submit-signup'])){
     </div>
     <button type="submit" name="submit-signup" class="btninscription">Inscription</button>
     <button type="submit" name="retour" class="btnretour">Retour</button>
-    <div class="imggrapes"><img src="asset/img/grapes1.jpg" alt=""></div>
 </form>
 
-
+</div>
 <?php 
     require('asset/footer.php');
 ?>

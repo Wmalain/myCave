@@ -337,12 +337,20 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "SourceSansPro-bold";
+  src: url("SourceSansPro-bold.ttf");
+}
 header {
   background-color: #88002D;
 }
 
 .divhead {
-  height: 140px;
+  height: 20vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -404,6 +412,10 @@ header {
   margin: 0px 25px 0px 25px;
 }
 
+body {
+  font-family: "SourceSansPro-Regular", sans-serif;
+}
+
 .titreindex {
   text-align: center;
   color: #3E0018;
@@ -414,6 +426,10 @@ header {
   margin: 100px;
 }
 
+.vinafficheall {
+  margin: 10px auto 10px auto;
+}
+
 .infocon {
   text-align: right;
   color: #3E0018;
@@ -421,10 +437,111 @@ header {
   font-size: 0.8em;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 725px) {
+  .listdisplay {
+    display: none;
+  }
+
+  .imgvin {
+    width: 130px;
+    height: 150px;
+  }
+
+  .listuser {
+    flex-direction: column;
+  }
+
+  .listusersel {
+    flex-direction: column;
+    margin: inherit;
+  }
+
+  .listusera {
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 880px) {
+  .linkadmin {
+    margin: inherit;
+  }
+
+  .logohead {
+    margin: inherit;
+    margin-bottom: 40px;
+    padding: inherit;
+  }
+
+  .divhead {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listadminhead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: inherit;
+    margin: inherit;
+  }
+
+  .listadminhead1 {
+    margin-bottom: 70px;
+  }
+
+  .formcon {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btnconnecthead {
+    margin: inherit;
+    margin-top: 20px;
+  }
+}
+.main {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.vinaffiche {
+  text-align: center;
+}
+
+.div2 {
+  margin: 20px 40% 10px 40%;
+}
+
+.ance {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pnom {
+  font-family: "SourceSansPro-bold", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.pdes {
+  margin: 20px 30% 10px 30%;
+}
+
 .titreajoutuser {
-  margin: 50px auto 25px auto;
+  margin: 5vh auto 25px auto;
   text-align: center;
   color: #3E0018;
+}
+
+.gen {
+  min-height: 55vh;
 }
 
 .formajoutuser {
@@ -474,7 +591,7 @@ header {
   background-color: #3E0018;
   color: white;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 5vh;
 }
 
 .btnretour {
@@ -485,13 +602,7 @@ header {
   color: white;
   text-align: center;
   margin-left: 25px;
-  margin-bottom: 50px;
-}
-
-.imggrapes {
-  position: absolute;
-  bottom: 80px;
-  right: 50px;
+  margin-bottom: 10vh;
 }
 
 .titremodifyuser {
@@ -553,12 +664,12 @@ header {
 }
 
 .imggrapes1 {
-  position: absolute;
-  bottom: 80px;
-  right: 50px;
+  text-align: right;
+  margin-right: 16%;
 }
 
 .titreajoutarticle {
+  margin-top: 10%;
   text-align: center;
   color: #3E0018;
 }
@@ -649,13 +760,7 @@ header {
   color: white;
   text-align: center;
   margin-left: 25px;
-  margin-bottom: 50px;
-}
-
-.imggrapes1 {
-  position: absolute;
-  bottom: -20px;
-  right: 50px;
+  margin-bottom: 10%;
 }
 
 .titremodifyarticle {
@@ -752,58 +857,72 @@ header {
   margin-bottom: 50px;
 }
 
-.titrelistearticle {
-  text-align: center;
-  color: #3E0018;
-}
-
-.ajoutproduit {
-  position: absolute;
-  top: 150px;
-  right: 200px;
-  font-size: 3em;
-}
-
-.alistearticle {
-  color: #3E0018;
-}
-
-.titreajoutuser {
-  text-align: center;
-  color: #3E0018;
-}
-
 .ajoutuser {
-  position: absolute;
-  top: 150px;
-  right: 200px;
   font-size: 3em;
 }
 
-.alisteuser {
+.divlistus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #3E0018;
+}
+
+.divlistus2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3E0018;
+  margin-bottom: 60px;
+}
+
+.listusersel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid #3E0018;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.listusersel2 {
+  text-align: center;
+  display: flex;
+}
+
+.listuserp {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.listusera {
+  color: #3E0018;
+  padding-left: 40px;
+  font-size: 2em;
+  margin-right: 20px;
 }
 
 footer {
   background-color: #88002D;
-  height: 130px;
+  height: 160px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 25px;
 }
 
 .divfoot {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-
-.imgfoot {
-  margin-top: 5px;
 }
 
 .footlist {
-  margin-left: 150px;
-  align-items: center;
   display: flex;
+  justify-content: center;
   list-style-type: none;
+  padding: inherit;
 }
 
 .lifoot {
