@@ -90,7 +90,7 @@ function tabvin(){
 ?>
 <?php
 function suprArticle(){
-    // Suppression d'un article en particulier grace a son id dans la table ids
+    // Suppression d'un article en particulier
     global $db;
     $id = $_GET['id'];
     $idproduit = $_GET['produitid'];

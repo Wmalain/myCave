@@ -473,7 +473,7 @@ body {
   }
 
   .divhead {
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -859,6 +859,7 @@ body {
 
 .ajoutuser {
   font-size: 3em;
+  color: #3E0018;
 }
 
 .divlistus {
